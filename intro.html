@@ -1,0 +1,278 @@
+<html>
+<head>
+<script type="text/javascript">
+	var num=16;
+	var Name="Sai";
+	var flag=false;
+	var x;
+	x=2;
+	document.write(x);
+	document.write("<br>");
+	//alert(x);
+	var a=2;
+	var b=1;
+	var res=a+b;
+	document.write("a"+res);
+	document.write("<br>");
+	//even or odd
+	document.write("<h2>if else</h2>");
+	document.write("<b>find whether no. is even or odd</b><br>");
+	var x=6;
+	if(x%2==0)
+	{
+		document.write("even");
+	}
+	else
+	{
+		document.write("odd");
+	}
+	document.write("<br>");
+	document.write("<b>find if a no +ve or -ve</b><br>");
+	var x=2;
+	if(x>0)
+	{
+		document.write("+ve");
+	}
+	else if(x<0)
+	{
+	document.write("-ve");
+	}	
+	else
+	{
+		document.write("zero");
+	}
+	document.write("<br>");
+	document.write("<b>find if a no is +ve & even</b><br>");
+	var x=5;
+	if(x>0)
+	{
+		document.write("+ve");
+		document.write("<br>");
+		if(x%2==0)
+		{
+			document.write("even");
+		}
+		else{
+			document.write("odd");
+		}
+	}
+	else{
+		document.write("-ve");
+	}
+	document.write("<br>");
+	document.write("<b>-ve or +ve</b><br>");
+	var x=-5;
+	if(x>0 && x%2==0)
+	{
+		document.write("even & +ve");
+	}
+	else
+	{
+		document.write("-ve");
+	}
+	document.write("<br>");
+	document.write("<h2>switch</h2>");
+	//switch
+	document.write("<b>find day of the week by accepting its no.</b><br>");
+	var day=01;
+	switch(day)
+	{
+		case 1:
+		document.write("sunday");
+		break;
+		case 2:
+		document.write("monday");
+		break;
+		case 3:
+		document.write("tuesday");
+		break;
+		case 4:
+		document.write("wednesday");
+		break;
+		case 5:
+		document.write("thursday");
+		break;
+		case 6:
+		document.write("friday");
+		break;
+		case 7:
+		document.write("saturday");
+		break;
+		default:
+		document.write("wrong input");
+	}
+	document.write("<br>");
+	var day="sunday";
+	switch(day)
+	{
+		case "sunday":
+		document.write("sunday");
+		break;
+	}
+	document.write("<br>");
+	var day=true;
+	switch(day)
+	{
+		case true:
+		document.write("true");
+		break;
+	}
+	document.write("<br>");
+	var day="sunday ";
+	switch(day+"sai")
+	{
+		case "sunday sai":
+		document.write("sunday");
+		break;
+	}
+	document.write("<br>");
+	//for loop
+	document.write("<h2>for loop</h2>");
+	document.write("<b>multiplication of 5</b><br>");
+	for(var x=1;x<=10;x++)
+	{
+		document.writeln(5*x);
+		document.write("<br>");
+	}
+	document.write("<b>print first five even no's</b><br>");
+	for(var x=2;x<=10;x++)
+	{
+		document.write(x);
+		document.write("<br>");
+	}
+	//while loop
+	document.write("<h2>while loop</h2>");
+	document.write("<b>print first 5 odd no's</b><br>");
+	var x=1;
+	while(x<10)
+	{
+		document.write(x);
+		document.write("<br>");
+		x+=2;
+	}
+	document.write("<h2>do..while</h2>");
+	document.write("<b>display usage of do..while loop</b><br>");
+	var x=6;
+	do{
+		document.write("my name<br>");
+		x--;
+	}while(x>4);
+	//functions
+	document.write("<h2>functions</h2>");
+	function add()
+	{
+	var a=5;
+	var b=5;
+	var c=a+b;
+	document.write(c);
+	document.write("<br>");
+	}
+	add();
+	document.write("<h2>scope of variables</h2>");
+	var a=5;
+	document.write(a);
+	document.write("<br>");
+	function fun()
+	{
+		var a=7;
+		document.write(a);
+		document.write("<br>");
+	}
+	fun();
+	document.write(a);
+	//arrays
+	document.write("<h2>arrays</h2>");
+	var cars=["abc","def","ghi"];
+	document.write(cars[0]);
+	document.write("<br>");
+	document.write("<br>");
+	for(var i=0;i<cars.length;i++)
+	{
+		document.write(cars[i]);
+		document.write("<br>");
+	}
+	document.write("<br>");
+	var arr=new Array("fruit","tree","banana");
+	for(var i=0;i<arr.length;i++)
+	{
+		document.write(arr[i]);
+		document.write("<br>");
+	}
+	document.write("<br>");
+	var arr1;
+	arr1=new Array("ball","apple","mango");
+	arr1.push("jkl");
+	for(var i=0;i<arr1.length;i++)
+	{
+		document.write(arr1[i]);
+		document.write("<br>");
+	}
+	arr1.push(1);
+	document.write("<br>");
+	for(var i=0;i<arr1.length;i++)
+	{
+		document.write(arr1[i]);
+		document.write("<br>");
+	}
+	//objects
+	document.write("<h2>objects</h2>");
+	var Car={
+		car_brand:"Tesla",
+		car_model:"Model 3",
+		price:35000,
+		teslaAutoPilot:function()
+		{
+			document.write("Auto Pilot");
+		}
+	}
+	Car.teslaAutoPilot();
+	//constructor function
+	document.write("<h2>constructor function</h2>");
+	function Cars(car_brand,car_model,price)
+	{
+		this.car_brand=car_brand;
+		this.car_model=car_model;
+		this.price=price;
+		this.teslaAutoPilot=function()
+		{
+			document.write("Auto Pilot");
+			document.write("<br>");
+		}
+	}
+	var c1=new Cars("Tesla","Model 3",35000);
+	var c2=new Cars("Tesla","Model P",45000);
+	c1.teslaAutoPilot();
+	document.write(c2.car_model);
+	document.write("<br>");
+	//objects cont...
+	document.write("<b>objects cont....</b><br>");
+	var str1=new String();
+	var str1="str";
+	document.write(typeof(str1));
+	document.write("<br>");
+	//
+	var Car={
+		car_brand:"Tesla",
+		car_model:"Model 3",
+		price:35000,
+		teslaAutoPilot:function(){
+			document.write("Auto Pilot");
+		}
+	}
+	Car.fuelType="Electric";
+	document.write(Car.fuelType);
+	document.write("<br>");
+	delete Car.price;
+	document.write(Car.price);
+	document.write("<br>");
+	Car.price="50000";
+	document.write(typeof(Car.price));
+	document.write("<br>");
+	document.write(Car.price);
+	document.write("<br>");
+</script>
+</head>
+<body>
+	
+</body>
+</html>

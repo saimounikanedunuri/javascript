@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Taking input from select box</title>
+<script type="text/javascript">
+function fn1()
+{
+var select=document.getElementById("selectbox");
+alert(select.options[select.selectedIndex].value);
+}
+</script>
+</head>
+<body>
+<select id="selectbox">
+<option value="apples">Apples</option>
+<option value="oranges">Oranges</option>
+<option value="grapes">Grapes</option>
+</select>
+<br>
+<button onclick="fn1()">Click Me</button>
+</body>
+</html>

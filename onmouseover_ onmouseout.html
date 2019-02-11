@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Change Image onmouseover and onmouseout events</title>
+<script type="text/javascript">
+function setNewImage()
+{
+document.getElementById("img1").src="college.jpg";
+}
+function setOldImage()
+{
+document.getElementById("img1").src="imglogo.jpg";
+}
+</script>
+</head>
+<body>
+<img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="imglogo.jpg"/>
+</body>
+</html>
