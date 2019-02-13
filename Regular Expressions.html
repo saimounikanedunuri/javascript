@@ -5,7 +5,10 @@
 function validate()
 {
 var username=document.getElementById("uname").value;
-var regx=/E00/i;
+//regx=new RegExp("E00","i");
+//var regx=/E00/i;
+//var regx=/[a-g A-G 0-9]E00/;
+var regx=/[^a-z]E00/;//^-for removing particular ele
 if(regx.test(username))
 {
 alert("Valid Username");
